@@ -1,2 +1,3 @@
-# congratulatory-pilot-website-air-india-express-themed-colors
-Exported from Caffeine project: Congratulatory pilot website (Air India Express-themed colors)
+## 
+
+To run app build and run docker image: `docker build -t app . docker run -it --network host app`

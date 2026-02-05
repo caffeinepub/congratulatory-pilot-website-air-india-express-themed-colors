@@ -1,0 +1,43 @@
+{
+  "kind": "implementation_plan",
+  "version": "1.0",
+  "title": "Add Vivan Pathak photo asset and feature it in hero section",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "summary": "Add optimized/cropped versions of IMG_0098.jpeg as static web assets under frontend/public/assets/ for hero usage",
+      "acceptanceCriteria": [
+        "An optimized/cropped version of IMG_0098.jpeg is saved under frontend/public/assets/ (or a subfolder) and can be loaded via a /assets/... URL in the browser.",
+        "The image is compressed appropriately for web use (reasonable file size) while maintaining good visual quality."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/public/assets/generated/vivan-hero.dim_1200x1500.jpg",
+          "operation": "create",
+          "description": "Add the optimized/cropped hero portrait asset derived from IMG_0098.jpeg (web-compressed and sized for hero usage)."
+        },
+        {
+          "path": "frontend/public/assets/generated/vivan-portrait-square.dim_800x800.jpg",
+          "operation": "create",
+          "description": "Add the optimized square portrait variant derived from IMG_0098.jpeg (web-compressed for smaller layouts where needed)."
+        }
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "summary": "Update HeroSection to prominently display Vivan Pathak’s photo first while preserving the existing Air India Express-inspired responsive layout",
+      "acceptanceCriteria": [
+        "On initial page load, the hero/top section prominently displays the new photo before other hero visuals (e.g., above the headline or as the main image in the hero).",
+        "The image includes appropriate English alt text (e.g., referencing Vivan Pathak as provided by the user) and does not cause layout shifts or overflow on common screen sizes.",
+        "The hero section still looks balanced alongside the existing headline, stats cards, and styling on both mobile and desktop."
+      ],
+      "file_operations": [
+        {
+          "path": "frontend/src/components/sections/HeroSection.tsx",
+          "operation": "modify",
+          "description": "Replace the current primary hero image with the new Vivan photo as the main visual using frontend/public/assets/generated/vivan-hero.dim_1200x1500.jpg (and optionally use frontend/public/assets/generated/vivan-portrait-square.dim_800x800.jpg for smaller breakpoints). Add appropriate English alt text referencing Vivan Pathak, and adjust the hero image container sizing/aspect behavior to prevent layout shifts/overflow while keeping the existing theme styling and responsiveness."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "kind": "coverage_report",
+  "version": "1.0",
+  "generatedAt": "2026-02-05T19:51:46.723Z",
+  "sources": {
+    "buildRequest": true,
+    "implementationPlan": true
+  },
+  "requirements": {
+    "total": 2,
+    "implemented": 2,
+    "items": [
+      {
+        "id": "REQ-10",
+        "summary": "Update the top of the page (HeroSection) to show Vivan Pathak’s photo first/at the beginning as the primary congratulatory visual, while keeping the existing Air India Express-inspired theme and ensuring the layout remains responsive on mobile and desktop.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/src/components/sections/HeroSection.tsx"
+        ],
+        "matchedFiles": [
+          "frontend/src/components/sections/HeroSection.tsx"
+        ]
+      },
+      {
+        "id": "REQ-9",
+        "summary": "Add the user-uploaded photo (IMG_0098.jpeg) to the app as a static asset under frontend/public/assets/ (optimized for web) so it can be used in the hero/top section.",
+        "status": "implemented",
+        "plannedFiles": [
+          "frontend/public/assets/generated/vivan-hero.dim_1200x1500.jpg",
+          "frontend/public/assets/generated/vivan-portrait-square.dim_800x800.jpg"
+        ],
+        "matchedFiles": [
+          "frontend/public/assets/generated/vivan-hero.dim_1200x1500.jpg",
+          "frontend/public/assets/generated/vivan-portrait-square.dim_800x800.jpg"
+        ]
+      }
+    ]
+  },
+  "changedFiles": [
+    "build-request.json",
+    "feature_evidence.json",
+    "frontend-file-summaries.txt",
+    "frontend-implementation-plan.json",
+    "frontend/public/assets/generated/vivan-hero.dim_1200x1500.jpg",
+    "frontend/public/assets/generated/vivan-portrait-square.dim_800x800.jpg",
+    "frontend/src/components/sections/HeroSection.tsx",
+    "project_state.json",
+    "scratch/component-selection.json",
+    "spec.md",
+    "spec_vs_diff_report.json"
+  ]
+}

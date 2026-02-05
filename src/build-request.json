@@ -1,0 +1,57 @@
+{
+  "kind": "build_request",
+  "title": "Add friend's photo to the beginning of the congratulatory page",
+  "priority": "normal",
+  "requirements": [
+    {
+      "id": "REQ-9",
+      "text": "Add the user-uploaded photo (IMG_0098.jpeg) to the app as a static asset under frontend/public/assets/ (optimized for web) so it can be used in the hero/top section.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "Add this photo in the begging as it’s his photo and I want to congratulate to him"
+        ]
+      },
+      "acceptanceCriteria": [
+        "An optimized/cropped version of IMG_0098.jpeg is saved under frontend/public/assets/ (or a subfolder) and can be loaded via a /assets/... URL in the browser.",
+        "The image is compressed appropriately for web use (reasonable file size) while maintaining good visual quality."
+      ]
+    },
+    {
+      "id": "REQ-10",
+      "text": "Update the top of the page (HeroSection) to show Vivan Pathak’s photo first/at the beginning as the primary congratulatory visual, while keeping the existing Air India Express-inspired theme and ensuring the layout remains responsive on mobile and desktop.",
+      "target": "frontend",
+      "source": {
+        "messageIds": [
+          "recent-messages"
+        ],
+        "quotes": [
+          "Add this photo in the begging as it’s his photo and I want to congratulate to him"
+        ]
+      },
+      "acceptanceCriteria": [
+        "On initial page load, the hero/top section prominently displays the new photo before other hero visuals (e.g., above the headline or as the main image in the hero).",
+        "The image includes appropriate English alt text (e.g., referencing Vivan Pathak as provided by the user) and does not cause layout shifts or overflow on common screen sizes.",
+        "The hero section still looks balanced alongside the existing headline, stats cards, and styling on both mobile and desktop."
+      ]
+    }
+  ],
+  "constraints": [
+    "Do not modify files in frontend/src/components/ui or any frontend immutablePaths listed in SYSTEM_CONTEXT.",
+    "Keep backend as single-actor; no backend changes are required for this static image addition."
+  ],
+  "nonGoals": [
+    "Adding new authentication, data storage, or backend endpoints.",
+    "Changing existing highlight-card modal behavior beyond what is necessary to place the photo at the beginning of the page."
+  ],
+  "imageRequirements": {
+    "required": [],
+    "edits": [
+      "Optimize/crop for hero usage (IMG_0098.jpeg > vivan-hero.dim_1200x1500.jpg)",
+      "Create a square portrait variant for smaller layouts if needed (IMG_0098.jpeg > vivan-portrait-square.dim_800x800.jpg)"
+    ]
+  }
+}

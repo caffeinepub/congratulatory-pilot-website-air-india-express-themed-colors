@@ -1,0 +1,21 @@
+{
+  "backend/main.mo": "Empty Motoko actor with no implemented logic.",
+  "feature_evidence.json": "Metadata report listing implemented features, related files, components, and test IDs.",
+  "frontend-file-summaries.txt": "Prewritten summaries describing the purpose of each frontend file in the project.",
+  "frontend/index.css": "Tailwind base layers plus OKLCH variable color system for light and dark themes.",
+  "frontend/index.html": "HTML entry point mounting the React app and loading main.tsx.",
+  "frontend/src/App.tsx": "Minimal app component rendering CongratsPage.",
+  "frontend/src/components/CongratsPage.tsx": "Page layout composing hero, highlights, aircraft photo, and footer inside ThemeShell.",
+  "frontend/src/components/Footer.tsx": "Footer with attribution text and caffeine.ai link.",
+  "frontend/src/components/sections/AircraftPhotoSection.tsx": "Section displaying a styled Boeing 737 aircraft image with header and caption.",
+  "frontend/src/components/sections/HeroSection.tsx": "Responsive hero showing Vivan’s portrait, congratulatory text, and aircraft/airline stats.",
+  "frontend/src/components/sections/HighlightsSection.tsx": "Achievement cards triggering detailed congratulatory modals with aviation imagery.",
+  "frontend/src/components/SurpriseModal.tsx": "Reusable shadcn-based modal showing an image and message for highlight cards.",
+  "frontend/src/components/ThemeShell.tsx": "Layout wrapper applying repeated airplane pattern background and theme styling.",
+  "frontend/src/hooks/useActor.ts": "React hook that creates and manages an authenticated or anonymous backend actor using Internet Identity and React Query.",
+  "frontend/src/hooks/useInternetIdentity.ts": "Provides a React context and provider for managing Internet Identity authentication, including loading stored identities, login flow, and status tracking.",
+  "frontend/src/index.css": "Defines Tailwind base styles and sets a custom orange‑red‑white theme with OKLCH variables for light and dark modes.",
+  "frontend/src/main.tsx": "Bootstraps the React app, wrapping it with React Query and the InternetIdentityProvider before rendering App.",
+  "frontend/tailwind.config.js": "Configures Tailwind with custom OKLCH color tokens, typography, container queries, animations, and extended theme settings.",
+  "project_state.json": "Stores project metadata, requirements, known issues, and feature definitions for building the themed congratulatory website."
+}

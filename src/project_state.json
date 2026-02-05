@@ -1,0 +1,137 @@
+{
+  "schemaVersion": "1.0.0",
+  "projectStateVersion": 13,
+  "summary": "Create a congratulatory website for a friend who became a pilot at Air India Express, themed in orange, red, and white.",
+  "architectural_notes": [
+    "Deployment domain/slug must be 5–50 characters and contain only letters, numbers, and hyphens (no spaces/parentheses)."
+  ],
+  "known_issues": [
+    "Production deployment failed due to invalid domain name/slug containing disallowed characters (spaces/parentheses), triggering a deployment error."
+  ],
+  "isFixRequest": false,
+  "imageRequirements": "## Edit Images\n- Optimize/crop for hero usage (IMG_0098.jpeg > vivan-hero.dim_1200x1500.jpg)\n- Create a square portrait variant for smaller layouts if needed (IMG_0098.jpeg > vivan-portrait-square.dim_800x800.jpg)",
+  "existing_features": [
+    {
+      "id": "feature-create-a-responsive-single-page-congratulatory-website-for-a-friend-who-was-selected-as-a-pilot-at-air-india-express-and-will-be-flying-a-boeing-737-with-clear-celebratory-copy-and-sections-that-work-well-on-mobile-and-desktop",
+      "title": "Create a responsive, single-page congratulatory website for a friend who was selected as a pilot at Air India Express and will be flying a Boeing 737, with clear celebratory copy and sections that work well on mobile and desktop.",
+      "reqIds": [
+        "REQ-1"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-apply-a-consistent-visual-theme-using-an-orange-red-and-white-palette-air-india-express-inspired-across-the-entire-site-including-typography-buttons-links-and-section-styling",
+      "title": "Apply a consistent visual theme using an orange, red, and white palette (Air India Express-inspired) across the entire site, including typography, buttons/links, and section styling.",
+      "reqIds": [
+        "REQ-2"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-generated-static-image-assets-saved-under-frontend-public-assets-generated-and-use-them-on-the-homepage-e-g-hero-and-decorative-elements-to-reinforce-the-pilot-aviation-celebration-theme",
+      "title": "Add generated static image assets (saved under frontend/public/assets/generated) and use them on the homepage (e.g., hero and decorative elements) to reinforce the pilot/aviation celebration theme.",
+      "reqIds": [
+        "REQ-3"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-new-aircraft-photo-asset-and-display-it-on-the-congratulatory-page-as-a-dedicated-responsive-section-with-a-short-caption-so-the-site-includes-a-clear-visual-of-the-aircraft",
+      "title": "Add a new aircraft photo asset and display it on the congratulatory page as a dedicated, responsive section (with a short caption) so the site includes a clear visual of the aircraft.",
+      "reqIds": [
+        "REQ-4"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-interactive-tap-click-pop-ups-modal-dialogs-so-that-when-the-user-taps-specific-celebratory-elements-on-the-page-a-pop-up-opens-showing-a-boeing-737-visual-photo-and-a-congratulatory-cute-message-for-vivan-pathak",
+      "title": "Add interactive tap/click pop-ups (modal dialogs) so that when the user taps specific celebratory elements on the page, a pop-up opens showing a Boeing 737 visual/photo and a congratulatory/cute message for Vivan Pathak.",
+      "reqIds": [
+        "REQ-5"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-a-small-clearly-labeled-interaction-cue-so-visitors-know-they-can-tap-click-e-g-tap-a-card-for-a-surprise-message-and-keep-the-copy-in-english",
+      "title": "Add a small, clearly labeled interaction cue so visitors know they can tap/click (e.g., “Tap a card for a surprise message”) and keep the copy in English.",
+      "reqIds": [
+        "REQ-6"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-increase-the-prominence-of-the-tap-click-interaction-cue-in-the-highlights-section-so-it-is-immediately-noticeable-on-both-mobile-and-desktop-not-subtle-not-easy-to-miss",
+      "title": "Increase the prominence of the tap/click interaction cue in the Highlights section so it is immediately noticeable on both mobile and desktop (not subtle, not easy to miss).",
+      "reqIds": [
+        "REQ-7"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-make-each-highlight-card-itself-communicate-tap-click-me-more-clearly-by-adding-an-always-visible-visual-affordance-on-the-cards-not-only-visible-on-hover-while-keeping-the-existing-layout-copy-and-modal-behavior-intact",
+      "title": "Make each highlight card itself communicate “tap/click me” more clearly by adding an always-visible visual affordance on the cards (not only visible on hover), while keeping the existing layout, copy, and modal behavior intact.",
+      "reqIds": [
+        "REQ-8"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-add-the-user-uploaded-photo-img-0098-jpeg-to-the-app-as-a-static-asset-under-frontend-public-assets-optimized-for-web-so-it-can-be-used-in-the-hero-top-section",
+      "title": "Add the user-uploaded photo (IMG_0098.jpeg) to the app as a static asset under frontend/public/assets/ (optimized for web) so it can be used in the hero/top section.",
+      "reqIds": [
+        "REQ-9"
+      ],
+      "version": 1
+    },
+    {
+      "id": "feature-update-the-top-of-the-page-herosection-to-show-vivan-pathak-s-photo-first-at-the-beginning-as-the-primary-congratulatory-visual-while-keeping-the-existing-air-india-express-inspired-theme-and-ensuring-the-layout-remains-responsive-on-mobile-and-desktop",
+      "title": "Update the top of the page (HeroSection) to show Vivan Pathak’s photo first/at the beginning as the primary congratulatory visual, while keeping the existing Air India Express-inspired theme and ensuring the layout remains responsive on mobile and desktop.",
+      "reqIds": [
+        "REQ-10"
+      ],
+      "version": 1
+    }
+  ],
+  "new_feature_requests": [
+    {
+      "id": "AR-1",
+      "summary": "Build a congratulatory website for a friend selected as a pilot at Air India Express (Boeing 737), using an orange/red/white theme.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-2",
+      "summary": "Add a photo of the friend’s aircraft to the live congratulatory site.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-3",
+      "summary": "Include the friend’s name (Vivan Pathak) in the website copy/message.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-4",
+      "summary": "Add interactive tap/click pop-ups (modals) showing Boeing 737 visuals/photos plus congratulatory/cute messages.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-5",
+      "summary": "Make the tap/click interaction cue much more prominent/visible so users notice they can tap for pop-ups.",
+      "reqIds": [],
+      "status": "pending"
+    },
+    {
+      "id": "AR-6",
+      "summary": "Add the friend’s photo at the beginning of the page (hero/top section) as the primary congratulatory visual.",
+      "reqIds": [],
+      "status": "pending"
+    }
+  ],
+  "gameProjectType": "none",
+  "projectName": "Congratulatory pilot website (Air India Express-themed colors)",
+  "clarification_mode": "instant",
+  "clarification_rounds": 0
+}
