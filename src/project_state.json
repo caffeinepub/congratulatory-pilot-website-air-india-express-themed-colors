@@ -1,6 +1,6 @@
 {
   "schemaVersion": "1.0.0",
-  "projectStateVersion": 13,
+  "projectStateVersion": 15,
   "summary": "Create a congratulatory website for a friend who became a pilot at Air India Express, themed in orange, red, and white.",
   "architectural_notes": [
     "Deployment domain/slug must be 5–50 characters and contain only letters, numbers, and hyphens (no spaces/parentheses)."
@@ -9,7 +9,6 @@
     "Production deployment failed due to invalid domain name/slug containing disallowed characters (spaces/parentheses), triggering a deployment error."
   ],
   "isFixRequest": false,
-  "imageRequirements": "## Edit Images\n- Optimize/crop for hero usage (IMG_0098.jpeg > vivan-hero.dim_1200x1500.jpg)\n- Create a square portrait variant for smaller layouts if needed (IMG_0098.jpeg > vivan-portrait-square.dim_800x800.jpg)",
   "existing_features": [
     {
       "id": "feature-create-a-responsive-single-page-congratulatory-website-for-a-friend-who-was-selected-as-a-pilot-at-air-india-express-and-will-be-flying-a-boeing-737-with-clear-celebratory-copy-and-sections-that-work-well-on-mobile-and-desktop",
@@ -90,6 +89,14 @@
         "REQ-10"
       ],
       "version": 1
+    },
+    {
+      "id": "feature-remove-the-portrait-photo-of-vivan-pathak-from-the-top-hero-section-so-the-page-no-longer-displays-the-image-currently-rendered-from-assets-generated-vivan-hero-dim-1200x1500-jpg-and-adjust-the-hero-layout-to-remain-visually-balanced-and-responsive-on-mobile-and-desktop-without-the-photo",
+      "title": "Remove the portrait photo of Vivan Pathak from the top Hero section so the page no longer displays the image currently rendered from `/assets/generated/vivan-hero.dim_1200x1500.jpg`, and adjust the Hero layout to remain visually balanced and responsive on mobile and desktop without the photo.",
+      "reqIds": [
+        "REQ-11"
+      ],
+      "version": 1
     }
   ],
   "new_feature_requests": [
@@ -120,12 +127,6 @@
     {
       "id": "AR-5",
       "summary": "Make the tap/click interaction cue much more prominent/visible so users notice they can tap for pop-ups.",
-      "reqIds": [],
-      "status": "pending"
-    },
-    {
-      "id": "AR-6",
-      "summary": "Add the friend’s photo at the beginning of the page (hero/top section) as the primary congratulatory visual.",
       "reqIds": [],
       "status": "pending"
     }

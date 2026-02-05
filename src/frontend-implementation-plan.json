@@ -1,41 +1,21 @@
 {
   "kind": "implementation_plan",
   "version": "1.0",
-  "title": "Add Vivan Pathak photo asset and feature it in hero section",
+  "title": "Remove Vivan portrait from Hero and rebalance responsive layout",
   "requirements": [
     {
-      "id": "REQ-9",
-      "summary": "Add optimized/cropped versions of IMG_0098.jpeg as static web assets under frontend/public/assets/ for hero usage",
+      "id": "REQ-11",
+      "summary": "Remove the Vivan portrait image from the Hero section and adjust the Hero layout to stay balanced and responsive across breakpoints.",
       "acceptanceCriteria": [
-        "An optimized/cropped version of IMG_0098.jpeg is saved under frontend/public/assets/ (or a subfolder) and can be loaded via a /assets/... URL in the browser.",
-        "The image is compressed appropriately for web use (reasonable file size) while maintaining good visual quality."
-      ],
-      "file_operations": [
-        {
-          "path": "frontend/public/assets/generated/vivan-hero.dim_1200x1500.jpg",
-          "operation": "create",
-          "description": "Add the optimized/cropped hero portrait asset derived from IMG_0098.jpeg (web-compressed and sized for hero usage)."
-        },
-        {
-          "path": "frontend/public/assets/generated/vivan-portrait-square.dim_800x800.jpg",
-          "operation": "create",
-          "description": "Add the optimized square portrait variant derived from IMG_0098.jpeg (web-compressed for smaller layouts where needed)."
-        }
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "summary": "Update HeroSection to prominently display Vivan Pathak’s photo first while preserving the existing Air India Express-inspired responsive layout",
-      "acceptanceCriteria": [
-        "On initial page load, the hero/top section prominently displays the new photo before other hero visuals (e.g., above the headline or as the main image in the hero).",
-        "The image includes appropriate English alt text (e.g., referencing Vivan Pathak as provided by the user) and does not cause layout shifts or overflow on common screen sizes.",
-        "The hero section still looks balanced alongside the existing headline, stats cards, and styling on both mobile and desktop."
+        "The Hero section no longer renders the `<img>` that displays Vivan Pathak’s portrait (currently sourced from `/assets/generated/vivan-hero.dim_1200x1500.jpg`).",
+        "Hero section content (headline, copy, and stat cards) remains readable, centered/laid out cleanly, and responsive across mobile and desktop breakpoints (no awkward empty column or spacing).",
+        "No other sections (Highlights, Aircraft photo section, modals, footer) are removed or broken by the layout change."
       ],
       "file_operations": [
         {
           "path": "frontend/src/components/sections/HeroSection.tsx",
           "operation": "modify",
-          "description": "Replace the current primary hero image with the new Vivan photo as the main visual using frontend/public/assets/generated/vivan-hero.dim_1200x1500.jpg (and optionally use frontend/public/assets/generated/vivan-portrait-square.dim_800x800.jpg for smaller breakpoints). Add appropriate English alt text referencing Vivan Pathak, and adjust the hero image container sizing/aspect behavior to prevent layout shifts/overflow while keeping the existing theme styling and responsiveness."
+          "description": "Remove the portrait-photo column that renders the image sourced from /assets/generated/vivan-hero.dim_1200x1500.jpg (do not delete the asset file). Update the container/grid structure so the remaining headline/copy/stat cards occupy the available width cleanly (e.g., switch to a single-column layout at all breakpoints, or reconfigure the grid so there is no empty column), maintaining good spacing, alignment, and responsiveness on mobile and desktop."
         }
       ]
     }

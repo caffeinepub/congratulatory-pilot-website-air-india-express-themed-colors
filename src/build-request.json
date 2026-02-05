@@ -1,57 +1,38 @@
 {
   "kind": "build_request",
-  "title": "Add friend's photo to the beginning of the congratulatory page",
+  "title": "Remove Vivan portrait photo from the hero section",
   "priority": "normal",
   "requirements": [
     {
-      "id": "REQ-9",
-      "text": "Add the user-uploaded photo (IMG_0098.jpeg) to the app as a static asset under frontend/public/assets/ (optimized for web) so it can be used in the hero/top section.",
+      "id": "REQ-11",
+      "text": "Remove the portrait photo of Vivan Pathak from the top Hero section so the page no longer displays the image currently rendered from `/assets/generated/vivan-hero.dim_1200x1500.jpg`, and adjust the Hero layout to remain visually balanced and responsive on mobile and desktop without the photo.",
       "target": "frontend",
       "source": {
         "messageIds": [
-          "recent-messages"
+          "msg-6"
         ],
         "quotes": [
-          "Add this photo in the begging as it’s his photo and I want to congratulate to him"
+          "Remove the photo"
         ]
       },
       "acceptanceCriteria": [
-        "An optimized/cropped version of IMG_0098.jpeg is saved under frontend/public/assets/ (or a subfolder) and can be loaded via a /assets/... URL in the browser.",
-        "The image is compressed appropriately for web use (reasonable file size) while maintaining good visual quality."
-      ]
-    },
-    {
-      "id": "REQ-10",
-      "text": "Update the top of the page (HeroSection) to show Vivan Pathak’s photo first/at the beginning as the primary congratulatory visual, while keeping the existing Air India Express-inspired theme and ensuring the layout remains responsive on mobile and desktop.",
-      "target": "frontend",
-      "source": {
-        "messageIds": [
-          "recent-messages"
-        ],
-        "quotes": [
-          "Add this photo in the begging as it’s his photo and I want to congratulate to him"
-        ]
-      },
-      "acceptanceCriteria": [
-        "On initial page load, the hero/top section prominently displays the new photo before other hero visuals (e.g., above the headline or as the main image in the hero).",
-        "The image includes appropriate English alt text (e.g., referencing Vivan Pathak as provided by the user) and does not cause layout shifts or overflow on common screen sizes.",
-        "The hero section still looks balanced alongside the existing headline, stats cards, and styling on both mobile and desktop."
+        "The Hero section no longer renders the `<img>` that displays Vivan Pathak’s portrait (currently sourced from `/assets/generated/vivan-hero.dim_1200x1500.jpg`).",
+        "Hero section content (headline, copy, and stat cards) remains readable, centered/laid out cleanly, and responsive across mobile and desktop breakpoints (no awkward empty column or spacing).",
+        "No other sections (Highlights, Aircraft photo section, modals, footer) are removed or broken by the layout change."
       ]
     }
   ],
   "constraints": [
-    "Do not modify files in frontend/src/components/ui or any frontend immutablePaths listed in SYSTEM_CONTEXT.",
-    "Keep backend as single-actor; no backend changes are required for this static image addition."
+    "Frontend immutable paths must not be edited: frontend/src/hooks/useInternetIdentity.ts, frontend/src/hooks/useInternetIdentity.tsx, frontend/src/hooks/useActor.ts, frontend/src/main.tsx, frontend/src/components/ui",
+    "Do not add new backend services or databases; backend remains a single Motoko actor."
   ],
   "nonGoals": [
-    "Adding new authentication, data storage, or backend endpoints.",
-    "Changing existing highlight-card modal behavior beyond what is necessary to place the photo at the beginning of the page."
+    "Removing the Boeing 737 aircraft photo section or any existing aviation imagery used elsewhere on the page",
+    "Deleting the photo asset files from the repository (only removing it from the rendered UI)",
+    "Changing existing congratulatory copy beyond what is necessary to fix layout after removing the photo"
   ],
   "imageRequirements": {
     "required": [],
-    "edits": [
-      "Optimize/crop for hero usage (IMG_0098.jpeg > vivan-hero.dim_1200x1500.jpg)",
-      "Create a square portrait variant for smaller layouts if needed (IMG_0098.jpeg > vivan-portrait-square.dim_800x800.jpg)"
-    ]
+    "edits": []
   }
 }

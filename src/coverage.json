@@ -1,37 +1,24 @@
 {
   "kind": "coverage_report",
   "version": "1.0",
-  "generatedAt": "2026-02-05T19:51:46.723Z",
+  "generatedAt": "2026-02-05T19:58:12.753Z",
   "sources": {
     "buildRequest": true,
     "implementationPlan": true
   },
   "requirements": {
-    "total": 2,
-    "implemented": 2,
+    "total": 1,
+    "implemented": 1,
     "items": [
       {
-        "id": "REQ-10",
-        "summary": "Update the top of the page (HeroSection) to show Vivan Pathak’s photo first/at the beginning as the primary congratulatory visual, while keeping the existing Air India Express-inspired theme and ensuring the layout remains responsive on mobile and desktop.",
+        "id": "REQ-11",
+        "summary": "Remove the portrait photo of Vivan Pathak from the top Hero section so the page no longer displays the image currently rendered from `/assets/generated/vivan-hero.dim_1200x1500.jpg`, and adjust the Hero layout to remain visually balanced and responsive on mobile and desktop without the photo.",
         "status": "implemented",
         "plannedFiles": [
           "frontend/src/components/sections/HeroSection.tsx"
         ],
         "matchedFiles": [
           "frontend/src/components/sections/HeroSection.tsx"
-        ]
-      },
-      {
-        "id": "REQ-9",
-        "summary": "Add the user-uploaded photo (IMG_0098.jpeg) to the app as a static asset under frontend/public/assets/ (optimized for web) so it can be used in the hero/top section.",
-        "status": "implemented",
-        "plannedFiles": [
-          "frontend/public/assets/generated/vivan-hero.dim_1200x1500.jpg",
-          "frontend/public/assets/generated/vivan-portrait-square.dim_800x800.jpg"
-        ],
-        "matchedFiles": [
-          "frontend/public/assets/generated/vivan-hero.dim_1200x1500.jpg",
-          "frontend/public/assets/generated/vivan-portrait-square.dim_800x800.jpg"
         ]
       }
     ]
@@ -41,8 +28,6 @@
     "feature_evidence.json",
     "frontend-file-summaries.txt",
     "frontend-implementation-plan.json",
-    "frontend/public/assets/generated/vivan-hero.dim_1200x1500.jpg",
-    "frontend/public/assets/generated/vivan-portrait-square.dim_800x800.jpg",
     "frontend/src/components/sections/HeroSection.tsx",
     "project_state.json",
     "scratch/component-selection.json",

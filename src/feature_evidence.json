@@ -2,24 +2,8 @@
   "kind": "feature_evidence_report",
   "features": [
     {
-      "featureId": "feature-add-the-user-uploaded-photo-img-0098-jpeg-to-the-app-as-a-static-asset-under-frontend-public-assets-optimized-for-web-so-it-can-be-used-in-the-hero-top-section",
-      "featureTitle": "Add the user-uploaded photo (IMG_0098.jpeg) to the app as a static asset under frontend/public/assets/ (optimized for web) so it can be used in the hero/top section.",
-      "files": [],
-      "components": [
-        "core-infrastructure@1.0.2",
-        "shadcn-ui@1.0.0",
-        "build-template-react@1.0.0",
-        "initial-app@1.0.0",
-        "github-export-icp-cli@1.0.0"
-      ],
-      "testIds": [
-        "REQ-9"
-      ],
-      "confidence": "high"
-    },
-    {
-      "featureId": "feature-update-the-top-of-the-page-herosection-to-show-vivan-pathak-s-photo-first-at-the-beginning-as-the-primary-congratulatory-visual-while-keeping-the-existing-air-india-express-inspired-theme-and-ensuring-the-layout-remains-responsive-on-mobile-and-desktop",
-      "featureTitle": "Update the top of the page (HeroSection) to show Vivan Pathak’s photo first/at the beginning as the primary congratulatory visual, while keeping the existing Air India Express-inspired theme and ensuring the layout remains responsive on mobile and desktop.",
+      "featureId": "feature-remove-the-portrait-photo-of-vivan-pathak-from-the-top-hero-section-so-the-page-no-longer-displays-the-image-currently-rendered-from-assets-generated-vivan-hero-dim-1200x1500-jpg-and-adjust-the-hero-layout-to-remain-visually-balanced-and-responsive-on-mobile-and-desktop-without-the-photo",
+      "featureTitle": "Remove the portrait photo of Vivan Pathak from the top Hero section so the page no longer displays the image currently rendered from `/assets/generated/vivan-hero.dim_1200x1500.jpg`, and adjust the Hero layout to remain visually balanced and responsive on mobile and desktop without the photo.",
       "files": [
         "frontend/src/components/sections/HeroSection.tsx"
       ],
@@ -31,7 +15,7 @@
         "github-export-icp-cli@1.0.0"
       ],
       "testIds": [
-        "REQ-10"
+        "REQ-11"
       ],
       "confidence": "high"
     }

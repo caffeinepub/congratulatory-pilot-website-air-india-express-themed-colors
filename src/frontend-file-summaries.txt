@@ -2,7 +2,7 @@
   "frontend/src/App.tsx": "Main application entry point that renders the CongratsPage component.",
   "frontend/src/components/CongratsPage.tsx": "Single-page layout component that composes the hero, highlights, aircraft photo sections, and footer within the themed shell.",
   "frontend/src/components/ThemeShell.tsx": "Layout wrapper that applies the subtle airplane pattern background and maintains consistent theming across the site.",
-  "frontend/src/components/sections/HeroSection.tsx": "Hero section featuring Vivan Pathak's portrait photo prominently on the left (mobile: top), with personalized congratulatory headline, Air India Express and Boeing 737 callouts, and stats cards on the right, maintaining the Air India Express-inspired responsive layout.",
+  "frontend/src/components/sections/HeroSection.tsx": "Hero section with centered congratulatory headline, Air India Express and Boeing 737 callouts, and stats cards in a single-column responsive layout without the portrait photo.",
   "frontend/src/components/sections/HighlightsSection.tsx": "Highlights section with four interactive achievement cards that open surprise modals on tap/click, featuring a highly visible gradient pill interaction cue with bouncing hand icons and always-visible \"TAP\" badges on each card for clear mobile and desktop affordance.",
   "frontend/src/components/Footer.tsx": "Footer component with copyright notice and caffeine.ai attribution with heart icon.",
   "frontend/src/index.css": "Global styles defining the Air India Express-inspired orange/red/white OKLCH color system for both light and dark modes.",
